@@ -1,0 +1,9 @@
+- links_category: 主题作者 # 分类名
+  has_thumbnail: false # 是否有预览图
+  list:
+      - name: EvanNotFound's Blog # 名字
+        link: https://ohevan.com # 链接
+        description: 感谢作者 EvanNotFound 的主题创作 # 描述
+        avatar: https://evan.beee.top/avatar.png # 头像
+        thumbnail:  # has_thumbnail 为 true 时才需要
+ 
