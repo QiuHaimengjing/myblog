@@ -54,8 +54,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0
       hexo-theme-redefine:
-        specifier: ^2.8.0
-        version: 2.8.0
+        specifier: ^2.8.1
+        version: 2.8.1
       hexo-wordcount:
         specifier: ^6.0.1
         version: 6.0.1
@@ -484,8 +484,8 @@ packages:
   hexo-theme-landscape@1.0.0:
     resolution: {integrity: sha512-bWQJWMqQI78wWiJPQZq5pJBH20TM442ShCaHGRetuEgMraxH0OKxB3NTupJzNEkzEk8DV2yrdizkXdKN6i501A==}
 
-  hexo-theme-redefine@2.8.0:
-    resolution: {integrity: sha512-khcfM3/veFbOFdeSCbSyFDjvcPdL3QT9IWMKfWVdfIPQrN7xEUptqsid4FTlIhRuEe7rwf0Wb8h+mJIgJXRc0A==}
+  hexo-theme-redefine@2.8.1:
+    resolution: {integrity: sha512-w1NAOZaQRaf9Lt4GHAGwfhC1YnIXfP8zL7jkqVH5carw7gnHCXXWkIowzR6vRdZpIe5or/GE08PbDCjx1Q19iw==}
 
   hexo-util@2.7.0:
     resolution: {integrity: sha512-hQM3h34nhDg0bSe/Tg1lnpODvNkz7h2u0+lZGzlKL0Oufp+5KCAEUX9wal7/xC7ax3/cwEn8IuoU75kNpZLpJQ==}
@@ -1446,7 +1446,7 @@ snapshots:
 
   hexo-theme-landscape@1.0.0: {}
 
-  hexo-theme-redefine@2.8.0: {}
+  hexo-theme-redefine@2.8.1: {}
 
   hexo-util@2.7.0:
     dependencies:
