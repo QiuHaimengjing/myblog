@@ -3,7 +3,7 @@
   list:
       - name: EvanNotFound's Blog # 名字
         link: https://ohevan.com # 链接
-        description: 感谢作者 EvanNotFound 的主题创作 # 描述
-        avatar: https://evan.beee.top/avatar.png # 头像
+        description: Evan的部落阁，用香港记者的速度更新文章 # 描述
+        avatar: https://assets.ohevan.com/avatars/avatar-min.png # 头像
         thumbnail:  # has_thumbnail 为 true 时才需要
  

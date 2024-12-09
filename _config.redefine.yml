@@ -199,7 +199,7 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
-    Photos:
+    相册:
       icon: fa-solid fa-image
       path: /masonry/
     # Archives: 
@@ -217,7 +217,7 @@ navbar:
     About: 
       icon: fa-regular fa-user
       submenus:
-        Me: /about
+        我: /about
         Github: https://github.com/QiuHaimengjing
     Friends:
       icon: fa-solid fa-link
