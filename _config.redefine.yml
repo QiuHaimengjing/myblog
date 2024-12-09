@@ -25,11 +25,11 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/config/ratio.png
+  favicon: https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/config/kianalogo.png
   # Site logo
-  logo: https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/config/ratio.png
+  logo: https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/config/kianalogo.png
   # Site avatar
-  avatar: https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/config/veritas-ratio.png
+  avatar: https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/config/kiana.jpg
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
