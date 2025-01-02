@@ -787,6 +787,4 @@ public Map createNative(String orderNo) {
 ```
  
 # 项目仓库
-[后端](https://github.com/QiuHaimengjing/online-education-platform-backend)  
-[后台管理系统前端](https://github.com/QiuHaimengjing/online-education-platform-frontend-management)   
-[前台用户系统前端](https://github.com/QiuHaimengjing/online-education-platform-frontend)
+[在线教育平台](https://github.com/QiuHaimengjing/online-education-platform)
