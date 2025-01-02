@@ -91,7 +91,10 @@ global:
     enable: true
     custom_message: '我能把你比作夏日吗' # Custom message. If empty, the site title will be displayed
   # Whether to enable open graph
-  open_graph: true
+  open_graph:
+    enable: true
+    image:
+    description:
   # Google Analytics
   google_analytics:
     enable: false # Whether to enable Google Analytics
@@ -301,8 +304,8 @@ articles:
   # Author label
   author_label: 
     enable: true # Whether to enable
-    auto: false # Whether to automatically add author label, e.g. Lv1, Lv2, Lv3...
-    list: []
+    auto: true # Whether to automatically add author label, e.g. Lv1, Lv2, Lv3...
+    list: ["Lv1", "Lv2", "Lv3"]
   # Code block settings
   code_block:
     copy: true # Whether to enable code block copy button
