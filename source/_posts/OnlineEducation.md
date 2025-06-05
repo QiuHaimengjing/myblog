@@ -1,25 +1,25 @@
 ---
 title: 在线教育平台
 date: 2024-05-27 19:04:00
-tags: [Java, Spring Boot, Spring Cloud, Vue]
+tags: [Java, Vue]
 categories:
-- [后端]
-- [Java]
-- [项目]
-- [前端, Vue]
+  - [项目]
 thumbnail: "https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/Home.jpg"
 excerpt: "本篇文章用于总结在线教育平台整个项目的开发过程，以及项目的功能和技术栈"
 ---
 
 # 序言
-由于在开发该系统时，并未有书写开发文档的经验，而仅仅是记录了每一天的开发日志，但开发日志多达21篇，因此把所有开发日志放在博客当中是影响读者观感的，因此本篇文章仅仅是作为总结，如果有具体需要，请联系我，或者访问我的GitHub仓库。
+
+由于在开发该系统时，并未有书写开发文档的经验，而仅仅是记录了每一天的开发日志，但开发日志多达 21 篇，因此把所有开发日志放在博客当中是影响读者观感的，因此本篇文章仅仅是作为总结，如果有具体需要，请联系我，或者访问我的 GitHub 仓库。
 
 # 项目简介
-在线教育平台采用B2C模式，Spring Cloud搭建整个微服务架构，后台采用Spring Boot+MySQL+MyBatis-Plus+Redis，并且结合Vue前端框架，采用Nuxt服务端渲染技术来优化前端页面，运用阿里云视频点播技术。在管理系统的后台中，运用Spring Security进行用户认证和授权，以确保对不同用户权限的细致划分。在用户的登录系统方面，则采纳了手机验证码注册和登录方式，并运用JWT生成Token以实现便捷的单点登录。此外，用户通过微信支付来进行课程购买。
+
+在线教育平台采用 B2C 模式，Spring Cloud 搭建整个微服务架构，后台采用 Spring Boot+MySQL+MyBatis-Plus+Redis，并且结合 Vue 前端框架，采用 Nuxt 服务端渲染技术来优化前端页面，运用阿里云视频点播技术。在管理系统的后台中，运用 Spring Security 进行用户认证和授权，以确保对不同用户权限的细致划分。在用户的登录系统方面，则采纳了手机验证码注册和登录方式，并运用 JWT 生成 Token 以实现便捷的单点登录。此外，用户通过微信支付来进行课程购买。
 
 # 技术栈
 
 ## 后端
+
 - Spring Boot
 - Spring Cloud
 - MySQL
@@ -29,6 +29,7 @@ excerpt: "本篇文章用于总结在线教育平台整个项目的开发过程�
 - EasyExcel
 
 ## 前端
+
 - Vue
 - Nuxt
 - ElementUI
@@ -36,19 +37,23 @@ excerpt: "本篇文章用于总结在线教育平台整个项目的开发过程�
 - ECharts
 
 # 后台管理系统
-在线教育平台后台管理系统的前端使用的是vue-admin-template模板
+
+在线教育平台后台管理系统的前端使用的是 vue-admin-template 模板
 ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/BackendLogin.jpg)
 
 ## 讲师管理
-对讲师进行增删改查操作，后端集成了阿里云OSS，用于讲师头像的上传。
+
+对讲师进行增删改查操作，后端集成了阿里云 OSS，用于讲师头像的上传。
 ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/AdminTeachers.png)
 **开发中值得一提的：**  
-vue-router导航切换 时，如果两个路由都渲染同个组件，组件会重（chong）用,  
-组件的生命周期钩子（created）不会再被调用, 使得组件的一些数据无法根据 path的改变得到更新  
-因此：  
-1. 我们可以在watch中监听路由的变化，当路由变化时，重新调用created中的内容；  
-2. 在init方法中我们判断路由的变化，如果是修改路由，则从api获取表单数据。  
-如果是新增路由，则重新初始化表单数据
+vue-router 导航切换 时，如果两个路由都渲染同个组件，组件会重（chong）用,  
+组件的生命周期钩子（created）不会再被调用, 使得组件的一些数据无法根据 path 的改变得到更新  
+因此：
+
+1. 我们可以在 watch 中监听路由的变化，当路由变化时，重新调用 created 中的内容；
+2. 在 init 方法中我们判断路由的变化，如果是修改路由，则从 api 获取表单数据。  
+   如果是新增路由，则重新初始化表单数据
+
 ```JavaScript
 watch: { // 监听
     $route(to, from) { // 路由变化方式，路由发生变化，方法就会执行
@@ -74,22 +79,26 @@ watch: { // 监听
 ```
 
 ## 课程分类管理
-前端上传课程Excel表格，后端通过EasyExcel来处理表格并将其持久化存储于数据库中。
+
+前端上传课程 Excel 表格，后端通过 EasyExcel 来处理表格并将其持久化存储于数据库中。
 ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/CourseExcel.png)
 ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/CourseCategory.png)
 
 ## 课程管理
+
 可以查看课程详细信息并管理课程，如果是发布课程需要进行三个步骤，分别是“填写课程基本信息”、“创建课程大纲”、“最终发布”，需要按照该执行顺序去操作才能完整发布课程。
 ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/CourseAdmin.png)
-**值得一提的是课程视频上传的实现**  
+**值得一提的是课程视频上传的实现**
+
 1. 引入依赖  
-引入依赖存在问题
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/DependencyProblem.png)
-mvn需要配置环境变量，这样才能在命令行中使用mvn命令
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/MavenPath.png)
-上传视频  
-参考官网压缩包里面的sample示例代码改造
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/ExampleCode.png)
+   引入依赖存在问题
+   ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/DependencyProblem.png)
+   mvn 需要配置环境变量，这样才能在命令行中使用 mvn 命令
+   ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/MavenPath.png)
+   上传视频  
+   参考官网压缩包里面的 sample 示例代码改造
+   ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/ExampleCode.png)
+
 ```java
 public static void main(String[] args) {
         String accessKeyId = "";
@@ -117,7 +126,9 @@ public static void main(String[] args) {
         }
     }
 ```
+
 2. 配置文件
+
 ```yml
 # 服务端口
 server:
@@ -142,11 +153,12 @@ spring:
 aliyun:
   vod:
     file:
-      keyid: 
-      keysecret: 
-
+      keyid:
+      keysecret:
 ```
+
 3. VodApplication
+
 ```java
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @ComponentScan(basePackages = {"com.invictusqiu"})
@@ -157,8 +169,10 @@ public class VodApplication {
     }
 }
 ```
+
 4. 工具类  
-常量读取工具类，读取配置文件的内容
+   常量读取工具类，读取配置文件的内容
+
 ```java
 @Component
 public class ConstantVodUtils implements InitializingBean {
@@ -180,7 +194,9 @@ public class ConstantVodUtils implements InitializingBean {
     }
 }
 ```
+
 5. 控制器
+
 ```java
 @RestController
 @RequestMapping("/eduvod/video")
@@ -199,7 +215,9 @@ public class VodController {
     }
 }
 ```
+
 6. 服务实现类
+
 ```java
 @Service
 public class VodServiceImpl implements VodService {
@@ -239,31 +257,37 @@ public class VodServiceImpl implements VodService {
     }
 }
 ```
+
 7. 前端
-chapter.vue
+   chapter.vue
+
 ```html
 <el-form-item label="上传视频">
-<el-upload
-  :on-success="handleVodUploadSuccess"
-  :on-remove="handleVodRemove"
-  :before-remove="beforeVodRemove"
-  :on-exceed="handleUploadExceed"
-  :file-list="fileList"
-  :action="BASE_API + '/eduvod/video/uploadAlyVideo'"
-  :limit="1"
-  class="upload-demo">
-  <el-button size="small" type="primary">上传视频</el-button>
-  <el-tooltip placement="right-end">
-    <div slot="content">最大支持1G，<br>
-      支持3GP、ASF、AVI、DAT、DV、FLV、F4V、<br>
-      GIF、M2T、M4V、MJ2、MJPEG、MKV、MOV、MP4、<br>
-      MPE、MPG、MPEG、MTS、OGG、QT、RM、RMVB、<br>
-      SWF、TS、VOB、WMV、WEBM 等视频格式上传</div>
-    <i class="el-icon-question"/>
-  </el-tooltip>
-</el-upload>
+  <el-upload
+    :on-success="handleVodUploadSuccess"
+    :on-remove="handleVodRemove"
+    :before-remove="beforeVodRemove"
+    :on-exceed="handleUploadExceed"
+    :file-list="fileList"
+    :action="BASE_API + '/eduvod/video/uploadAlyVideo'"
+    :limit="1"
+    class="upload-demo"
+  >
+    <el-button size="small" type="primary">上传视频</el-button>
+    <el-tooltip placement="right-end">
+      <div slot="content">
+        最大支持1G，<br />
+        支持3GP、ASF、AVI、DAT、DV、FLV、F4V、<br />
+        GIF、M2T、M4V、MJ2、MJPEG、MKV、MOV、MP4、<br />
+        MPE、MPG、MPEG、MTS、OGG、QT、RM、RMVB、<br />
+        SWF、TS、VOB、WMV、WEBM 等视频格式上传
+      </div>
+      <i class="el-icon-question" />
+    </el-tooltip>
+  </el-upload>
 </el-form-item>
 ```
+
 ```JavaScript
 fileList: [], // 上传视频的列表
 BASE_API: process.env.BASE_API // 接口API地址
@@ -277,19 +301,25 @@ handleUploadExceed() {
   this.$message.warning('想要重新上传视频，请先删除已上传的视频')
 },
 ```
-8. nginx配置
+
+8. nginx 配置
+
 ```conf
 location ~ /eduvod/ {
     proxy_pass http://localhost:8082;
 }
 ```
-配置nginx上传文件大小，否则上传时会有 413 (Request Entity Too Large) 异常  
-打开nginx主配置文件nginx.conf，找到http{}，添加
+
+配置 nginx 上传文件大小，否则上传时会有 413 (Request Entity Too Large) 异常  
+打开 nginx 主配置文件 nginx.conf，找到 http{}，添加
+
 ```conf
 client_max_body_size 1024m;
 ```
+
 9. 如果数据库没有视频名称  
-修改前端
+   修改前端
+
 ```JavaScript
 // 上传视频成功调用的方法
 handleVodUploadSuccess(response, file, fileList) {
@@ -301,10 +331,12 @@ handleVodUploadSuccess(response, file, fileList) {
 ```
 
 ## 统计分析
-统计分析页面，前端页面使用Echarts组件库实现图表展示，用户可以选择指定日期范围生成统计数据，包括范围内的用户登录数和注册数，以及课程播放数等数据。
+
+统计分析页面，前端页面使用 Echarts 组件库实现图表展示，用户可以选择指定日期范围生成统计数据，包括范围内的用户登录数和注册数，以及课程播放数等数据。
 ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/StatisticalAnalysis.png)
-该模块使用了Feign远程调用  
-比如调用接口UcenterClient
+该模块使用了 Feign 远程调用  
+比如调用接口 UcenterClient
+
 ```java
 @Component
 @FeignClient("service-ucenter")
@@ -315,7 +347,9 @@ public interface UcenterClient {
     public Result countRegister(@PathVariable("day") String day);
 }
 ```
-StatisticsDailyServiceImpl服务实现类
+
+StatisticsDailyServiceImpl 服务实现类
+
 ```java
 @Autowired
 private UcenterClient ucenterClient;
@@ -344,12 +378,16 @@ public void registerCount(String day) {
     baseMapper.insert(sta);
 }
 ```
+
 除此之外，启用定时任务实现每天统计  
 启动类添加注释
+
 ```java
 @EnableScheduling //定时任务注解
 ```
-创建ScheduleTask类
+
+创建 ScheduleTask 类
+
 ```java
 @Component
 public class ScheduleTask {
@@ -372,22 +410,26 @@ public class ScheduleTask {
     }
 }
 ```
- 
+
 # 前台用户系统
 
 ## 前端框架
+
 Nuxt.js 是一个基于 Vue.js 的轻量级应用框架,可用来创建服务端渲染 (SSR) 应用,也可充当静态站点引擎生成静态站点应用,具有优雅的代码结构分层和热加载等特性。  
 [官方网站](https://zh.nuxtjs.org/)  
 幻灯片插件：vue-awesome-swiper
 
 ## 首页
-展示轮播图、热门课程等信息，然后对用户展示网站幻灯片、热门课程、名师等内容，为了提高访问速度使用了Redis缓存首页数据。
+
+展示轮播图、热门课程等信息，然后对用户展示网站幻灯片、热门课程、名师等内容，为了提高访问速度使用了 Redis 缓存首页数据。
 ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/HomePage.png)
 
 ## 注册和登录
+
 注册功能需要用户通过填写昵称、手机号，然后接收验证码的方式进行注册。如果使用手机号码注册，系统会通过阿里云短信服务向该用户发送短信验证码，后端保存该验证码来和用户输入的验证码进行比对。如果用户是以扫描微信二维码的方式进行注册，后端接收到该请求后会将页面重定向至二维码页面，扫码之后获得微信官方返回的临时票据，使用票据可以获得该用户微信账号的访问凭证和唯一标识，然后请求微信官方的接口地址得到该用户的账号信息，并将其持久化存储于数据库中，实现微信扫码注册功能。
 ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/RegisterPage.png)
-值得一提的是使用Redis解决验证码有效时间问题
+值得一提的是使用 Redis 解决验证码有效时间问题
+
 ```java
 // springboot整合的Redis模板对象
 @Autowired
@@ -419,11 +461,13 @@ public Result sendMsm(@PathVariable String phone) {
     }
 }
 ```
- 
+
 ## 课程列表
+
 课程列表，展示上架课程，对不同种类的课程进行了分类，可以按照销量、发布时间、售价来对课程列表进行排序。
 ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/CourseSchedule.png)
 后端处理条件分页
+
 ```java
 // 1.条件查询带分页查询课程
 @Override
@@ -472,79 +516,106 @@ public Map<String, Object> getCourseFrontList(Page<EduCourse> pageCourse, Course
     return map;
 }
 ```
- 
+
 ## 课程详情
+
 课程详情页，包含课程基本信息、分类、讲师等内容，课程分为免费和付费，如果是付费课程，那么前端的“立即观看”按钮会变为“立即购买”按钮，并且在该页面用户可以发表对该课程的评论。
 ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/CourseDetail.png)
 
 ## 视频播放
+
 ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/VodPlayer.png)
 
 ### 获取播放地址
+
 [参考文档](https://help.aliyun.com/document_detail/61064.html)  
-前面的 03-使用服务端SDK 介绍了如何获取非加密视频的播放地址。直接使用03节的例子获取加密视频播放地址会返回如下错误信息   
+前面的 03-使用服务端 SDK 介绍了如何获取非加密视频的播放地址。直接使用 03 节的例子获取加密视频播放地址会返回如下错误信息  
 Currently only the AliyunVoDEncryption stream exists, you must use the Aliyun player to play or set the value of ResultType to Multiple.  
-目前只有AliyunVoDEncryption流存在，您必须使用Aliyun player来播放或将ResultType的值设置为Multiple。  
-因此在testGetPlayInfo测试方法中添加 ResultType 参数，并设置为true  
+目前只有 AliyunVoDEncryption 流存在，您必须使用 Aliyun player 来播放或将 ResultType 的值设置为 Multiple。  
+因此在 testGetPlayInfo 测试方法中添加 ResultType 参数，并设置为 true
+
 ```java
 privateParams.put("ResultType", "Multiple");
 ```
+
 此种方式获取的视频文件不能直接播放，必须使用阿里云播放器播放
 
 ### 视频播放器
+
 [参考文档](https://help.aliyun.com/document_detail/61109.html)  
 **视频播放器介绍**  
-阿里云播放器SDK（ApsaraVideo Player SDK）是阿里视频服务的重要一环，除了支持点播和直播的基础播放功能外，深度融合视频云业务，如支持视频的加密播放、安全下载、清晰度切换、直播答题等业务场景，为用户提供简单、快速、安全、稳定的视频播放服务。
+阿里云播放器 SDK（ApsaraVideo Player SDK）是阿里视频服务的重要一环，除了支持点播和直播的基础播放功能外，深度融合视频云业务，如支持视频的加密播放、安全下载、清晰度切换、直播答题等业务场景，为用户提供简单、快速、安全、稳定的视频播放服务。
 
 **集成视频播放器**  
 [参考文档](https://help.aliyun.com/document_detail/51991.html)  
 参考 【播放器简单使用说明】一节  
-引入脚本文件和css文件
+引入脚本文件和 css 文件
+
 ```html
-<link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.1/skins/default/aliplayer-min.css" />
-<script charset="utf-8" type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.8.1/aliplayer-min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://g.alicdn.com/de/prismplayer/2.8.1/skins/default/aliplayer-min.css"
+/>
+<script
+  charset="utf-8"
+  type="text/javascript"
+  src="https://g.alicdn.com/de/prismplayer/2.8.1/aliplayer-min.js"
+></script>
 ```
+
 初始化视频播放器
+
 ```html
 <body>
-    <div  class="prism-player" id="J_prismPlayer"></div>
-    <script>
-        var player = new Aliplayer({
-            id: 'J_prismPlayer',
-            width: '100%',
-            autoplay: false,
-            cover: 'http://liveroom-img.oss-cn-qingdao.aliyuncs.com/logo.png',  
-            //播放配置
-        },function(player){
-            console.log('播放器创建好了。')
-        });
-    </script>
+  <div class="prism-player" id="J_prismPlayer"></div>
+  <script>
+    var player = new Aliplayer(
+      {
+        id: "J_prismPlayer",
+        width: "100%",
+        autoplay: false,
+        cover: "http://liveroom-img.oss-cn-qingdao.aliyuncs.com/logo.png",
+        //播放配置
+      },
+      function (player) {
+        console.log("播放器创建好了。");
+      }
+    );
+  </script>
 </body>
 ```
+
 **1. 播放地址播放**  
-在Aliplayer的配置参数中添加如下属性
+在 Aliplayer 的配置参数中添加如下属性
+
 ```JavaScript
 //播放方式一：支持播放地址播放,此播放优先级最高，此种方式不能播放加密视频
 source: '你的视频播放地址',
 ```
+
 启动浏览器运行，测试视频的播放
 
 **2. 播放凭证播放（推荐）**  
-阿里云播放器支持通过播放凭证自动换取播放地址进行播放，接入方式更为简单，且安全性更高。播放凭证默认时效为100秒（最大为3000秒），只能用于获取指定视频的播放地址，不能混用或重复使用。如果凭证过期则无法获取播放地址，需要重新获取凭证。
+阿里云播放器支持通过播放凭证自动换取播放地址进行播放，接入方式更为简单，且安全性更高。播放凭证默认时效为 100 秒（最大为 3000 秒），只能用于获取指定视频的播放地址，不能混用或重复使用。如果凭证过期则无法获取播放地址，需要重新获取凭证。
+
 ```JavaScript
 encryptType:'1',//如果播放加密视频，则需设置encryptType=1，非加密视频无需设置此项
 vid : '视频id',
 playauth : '视频授权码',
 ```
-注意：播放凭证有过期时间，默认值：100秒 。取值范围：100~3000。  
+
+注意：播放凭证有过期时间，默认值：100 秒 。取值范围：100~3000。  
 设置播放凭证的有效期  
-在获取播放凭证的测试用例中添加如下代码  
+在获取播放凭证的测试用例中添加如下代码
+
 ```JavaScript
 request.setAuthInfoTimeout(200L);
 ```
+
 [在线配置参考](https://player.alicdn.com/aliplayer/setting/setting.html)
 
 ### 后端获取播放凭证
+
 **播放组件相关文档：**  
 [集成文档](https://help.aliyun.com/document_detail/51991.html?spm=a2c4g.11186623.2.39.478e192b8VSdEn)  
 [在线配置](https://player.alicdn.com/aliplayer/setting/setting.html)  
@@ -553,7 +624,9 @@ request.setAuthInfoTimeout(200L);
 ## 整合阿里云视频播放器
 
 ### 后端
-修改VideoVo
+
+修改 VideoVo
+
 ```java
 public class VideoVo {
 
@@ -566,6 +639,7 @@ public class VideoVo {
 ```
 
 VodController
+
 ```java
 // 根据视频id获取视频凭证
 @GetMapping("getPlayAuth/{id}")
@@ -587,10 +661,12 @@ public Result getPlayAuth(@PathVariable String id) {
     }
 }
 ```
- 
+
 ### 前端
+
 api  
 vod.js
+
 ```JavaScript
 import request from '@/utils/request'
 
@@ -604,14 +680,15 @@ export default {
 }
 ```
 
-创建新的layouts  
+创建新的 layouts  
 video.vue
+
 ```html
 <template>
   <div class="guli-player">
     <div class="head">
       <a href="#" title="在线教育">
-        <img class="logo" src="~/assets/img/logo.png" lt="在线教育">
+        <img class="logo" src="~/assets/img/logo.png" lt="在线教育" />
       </a>
     </div>
     <div class="body">
@@ -622,93 +699,105 @@ video.vue
   </div>
 </template>
 <script>
-export default {}
+  export default {};
 </script>
 <style>
-html,
-body {
-  height: 100%;
-}
+  html,
+  body {
+    height: 100%;
+  }
 </style>
 
 <style scoped>
-.head {
-  height: 50px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
+  .head {
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 
-.head .logo {
-  height: 50px;
-  margin-left: 10px;
-}
+  .head .logo {
+    height: 50px;
+    margin-left: 10px;
+  }
 
-.body {
-  position: absolute;
-  top: 50px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-}
+  .body {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
 </style>
 ```
 
-_id.vue  
-点击小节携带视频id跳转
+\_id.vue  
+点击小节携带视频 id 跳转
+
 ```html
-<a :href="'/player/'+video.videoSourceId" title target="_blank">
+<a :href="'/player/'+video.videoSourceId" title target="_blank"></a>
 ```
 
-新建Page/player/_vid.vue  
+新建 Page/player/\_vid.vue
+
 ```html
 <template>
   <div>
-
     <!-- 阿里云视频播放器样式 -->
-    <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.1/skins/default/aliplayer-min.css">
+    <link
+      rel="stylesheet"
+      href="https://g.alicdn.com/de/prismplayer/2.8.1/skins/default/aliplayer-min.css"
+    />
 
     <!-- 定义播放器dom -->
     <div id="J_prismPlayer" class="prism-player" />
   </div>
 </template>
-<script charset="utf-8" type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.8.1/aliplayer-min.js"/>
+<script
+  charset="utf-8"
+  type="text/javascript"
+  src="https://g.alicdn.com/de/prismplayer/2.8.1/aliplayer-min.js"
+/>
 <script>
-import vod from '@/api/vod'
-export default {
-  layout: 'video', // 使用video布局
-  asyncData({ params, error }) {
-    return vod.getPlayAuth(params.vid)
-      .then(response => {
+  import vod from "@/api/vod";
+  export default {
+    layout: "video", // 使用video布局
+    asyncData({ params, error }) {
+      return vod.getPlayAuth(params.vid).then((response) => {
         return {
           playAuth: response.data.playAuth,
-          vid: params.vid
+          vid: params.vid,
+        };
+      });
+    },
+    mounted() {
+      new Aliplayer(
+        {
+          id: "J_prismPlayer",
+          vid: this.vid, // 视频id
+          playauth: this.playAuth, // 播放凭证
+          // encryptType: '1', // 如果播放加密视频，则需设置encryptType=1，非加密视频无需设置此项
+          width: "100%",
+          height: "500px",
+        },
+        function (player) {
+          console.log("播放器创建成功");
         }
-      })
-  },
-  mounted() {
-    new Aliplayer({
-      id: 'J_prismPlayer',
-      vid: this.vid, // 视频id
-      playauth: this.playAuth, // 播放凭证
-      // encryptType: '1', // 如果播放加密视频，则需设置encryptType=1，非加密视频无需设置此项
-      width: '100%',
-      height: '500px'
-    }, function(player) {
-      console.log('播放器创建成功')
-    })
-  }
-}
+      );
+    },
+  };
 </script>
 ```
 
 排错
->先看看播放器的js有没有引入
-摁下F12，在网络中（network）查看，如果没有可以尝试在nuxt.config.js文件中的head中添加。  
-不要删除原_vid.vue中的
-```JavaScript
+
+> 先看看播放器的 js 有没有引入
+> 摁下 F12，在网络中（network）查看，如果没有可以尝试在 nuxt.config.js 文件中的 head 中添加。  
+> 不要删除原\_vid.vue 中的
+
+````JavaScript
 <script charset="utf-8" type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.8.1/aliplayer-min.js"/>
 ```html
 把它放到`<template></template>`标签外
@@ -716,20 +805,24 @@ export default {
 head: {
   script: [{ src: 'https://g.alicdn.com/de/prismplayer/2.8.1/aliplayer-min.js' }],
 }
-```
- 
+````
+
 ## 名师列表
+
 得到所有讲师信息，显示所有名师的头像、名称、简介内容。
 ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/TeacherList.png)
 
 ## 讲师详情
-在名师列表页可以选择不同讲师的卡片，通过携带讲师id请求后端接口来查询该讲师的信息和所授课程，页面中展示了名师的详细信息和所授课程。
+
+在名师列表页可以选择不同讲师的卡片，通过携带讲师 id 请求后端接口来查询该讲师的信息和所授课程，页面中展示了名师的详细信息和所授课程。
 ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/TeacherDetail.png)
 
 ## 订单模块
-课程支付，用户只有登录后才能购买对应课程。购买会生成课程订单和微信支付的二维码，在此支付期间每隔3秒会查询支付状态，只有扫码成功后才更新数据库中该订单的支付状态，一旦查询支付状态为“已支付”才能为用户开通课程观看权限。
+
+课程支付，用户只有登录后才能购买对应课程。购买会生成课程订单和微信支付的二维码，在此支付期间每隔 3 秒会查询支付状态，只有扫码成功后才更新数据库中该订单的支付状态，一旦查询支付状态为“已支付”才能为用户开通课程观看权限。
 ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/OrderPay.png)
 服务实现代码
+
 ```java
 @Autowired
 private OrderService orderService;
@@ -785,6 +878,7 @@ public Map createNative(String orderNo) {
     }
 }
 ```
- 
+
 # 项目仓库
+
 [在线教育平台](https://github.com/QiuHaimengjing/online-education-platform)
