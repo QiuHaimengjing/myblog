@@ -54,7 +54,7 @@ mathjax: true
 
 **<font style="color:#ECAA04;">由此我们可以发现，价值不仅是商品的社会属性，还是商品的交换性基础，并与其使用价值的具体性相对立，因为商品不仅仅是满足需求的物质载体，同时也是一种社会关系的表现形式。</font>**
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capital1-1.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital1-1.png)
 
 ---
 

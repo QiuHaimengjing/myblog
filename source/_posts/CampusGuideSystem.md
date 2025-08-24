@@ -4,7 +4,7 @@ date: 2023-1-16 15:45:38
 tags: [C++]
 categories:
   - [项目]
-thumbnail: "https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/CampusGuideSystem/Guide1.png"
+thumbnail: "https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CampusGuideSystem/Guide.png"
 excerpt: "校园导游系统是我的数据结构课程设计，这篇文章能够帮我记下 Dijkstra 算法的实际运用，今后遇到相应的算法也能够有解决思路。"
 ---
 
@@ -29,10 +29,10 @@ excerpt: "校园导游系统是我的数据结构课程设计，这篇文章能�
 ## 地图设计
 
 要制作导游系统，首先就是明确我们的导游范围，为了明确如何画出地图，我查看了我们学校的地图。
-![玉溪师范学院地图](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/CampusGuideSystem/yxnumap.png "玉溪师范学院地图")
+![玉溪师范学院地图](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CampusGuideSystem/yxnumap.png "玉溪师范学院地图")
 然后根据地图筛选出了 15 个景点建筑加入到了这次的系统地图中。  
 将 15 个地点抽象出来构成图结构
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/CampusGuideSystem/map1.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CampusGuideSystem/map.png)
 
 > 1.东北门 2.大学生活动中心 3.实训大楼 A 4.滋味苑 5.龙马公寓 6.后山 7.学生宿舍 F,G 幢 8.学生宿舍 K,L,M,N 幢 9.主教学区 10.品味苑 11.艺术综合楼 12.图书馆 13.运动场 14.东南门 15.传习馆
 
@@ -171,7 +171,7 @@ void CreatGraph(Graph& G)
 这样讲还是难懂，那我们从头开始了解 Dijkstra 算法吧
 
 下面以该图为例讲解 Dijkstra 算法寻找最短路径的过程
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/CampusGuideSystem/Dijkstra2.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CampusGuideSystem/Dijkstra.png)
 以 A 为起始点，求 A 到 BCDEF 的最短路径
 
 要求 A 到其他 5 个点的最短距离，我们构造一个数组记录 A 到 BCDEF5 个点的路径距离。
@@ -202,7 +202,7 @@ Dijkstra 算法的思想是：从以上最短距离数组中每次选择一个�
 | 第一步选取该最短路径数组中值最小的一个点。因为 A 点到本身不需要参与运算，所以从剩下的点中选择最短的一个是 D。 |     |     |     |     |     |
 | 第二步以**A-D**的距离为最近距离更新 A 点到所有点的距离。即相当于 A 点经过 D 点，计算 A 到其他点的距离。       |     |     |     |     |     |
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/CampusGuideSystem/Dijkstra3.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CampusGuideSystem/Dijkstra1.png)
 A-A: 0  
 A-B: A-D-B:6  
 A-C: A-D-C:19  
@@ -225,7 +225,7 @@ AD 两点已经选取，不再参与下面的计算。
 |  0  |  6  | 19  |  4  | 10  |  ∞  |
 
 以 B 为最新点，更新最短距离数组
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/CampusGuideSystem/Dijkstra4.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CampusGuideSystem/Dijkstra2.png)
 A-A: 0  
 A-B: A-D-B:6  
 A-C: A-D-B-C:14  
@@ -245,7 +245,7 @@ C 点由 19 更新成 14，E 点走 A-D-E 为 10，**距离更短所以不更新
 第一步：选取除了 A B D 节点之外的剩余节点中最短节点，为点 E  
 第二步：以 E 点为最新节点，更新最短路径数组  
 因为在上一步中计算达到 E 点的距离时没有更新距离，A-D-E 为 10 最短，所以更新 E 点到 B C F 点的距离时走的路径是 A-D-E。注意这里的最短距离有对应的路径，选择最小值就是选择最短距离。
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/CampusGuideSystem/Dijkstra5.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CampusGuideSystem/Dijkstra3.png)
 A-A: 0  
 A-B: A-D-B:6  
 A-C: A-D-E-C:11  
@@ -263,7 +263,7 @@ A-F: A-D-E-F:22
 
 第一步：选取除了 A B D E 节点之外的剩余节点中最短节点，为点 C  
 第二步：以 C 点为最新节点，更新最短路径数组
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/CampusGuideSystem/Dijkstra6.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CampusGuideSystem/Dijkstra4.png)
 A-A: 0  
 A-B: A-D-B:6  
 A-C: A-D-E-C:11  
@@ -281,7 +281,7 @@ A-F: A-D-E-C-F:16
 
 第一步：选取除了 A B C D E 节点之外的剩余节点中最短节点，也就是最后一个节点：F  
 第二步：以 F 点为最新节点，更新最短路径数组。由于 F 点是最后一个点，所以也不用更新数组，目前的数组就是所求数组将 F 点加入最短路径范围中，此时所有的点都加入了最短路径范围，也就是说 A 点到所有点的距离都找到了。最终得出的距离值为：
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/CampusGuideSystem/Dijkstra7.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CampusGuideSystem/Dijkstra5.png)
 最终得到的结果为：
 
 |  A  |  B  |  C  |  D  |  E  |  F  |
@@ -297,19 +297,19 @@ A-F: A-D-E-C-F:16
 A-A: 0
 
 A-B: A-D-B:6
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/CampusGuideSystem/Dijkstra8.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CampusGuideSystem/Dijkstra6.png)
 
 A-C: A-D-E-C:11
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/CampusGuideSystem/Dijkstra9.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CampusGuideSystem/Dijkstra7.png)
 
 A-D:4
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/CampusGuideSystem/Dijkstra10.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CampusGuideSystem/Dijkstra8.png)
 
 A-E: A-D-E:10
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/CampusGuideSystem/Dijkstra11.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CampusGuideSystem/Dijkstra9.png)
 
 A-F: A-D-E-C-F:16
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/CampusGuideSystem/Dijkstra12.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CampusGuideSystem/Dijkstra10.png)
 
 ## 代码实现 Dijkstra 算法
 
@@ -686,7 +686,7 @@ void ShowType(Spot spt[], SpotType stype[])
 
 # 链接：
 
-[校园导游系统](https://github.com/InvictusEd/Campus-tour-guide-system.git)
+[校园导游系统](https://github.com/QiuHaimengjing/Campus-tour-guide-system)
 
 > 本章一句：  
 > 当你因为错过太阳而哭泣的时候，你也要错过群星了。——泰戈尔《飞鸟集》

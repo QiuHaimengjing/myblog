@@ -49,7 +49,7 @@ $ W=A(劳动力)+PM(生产资料) $
 
 <font style="color:black;">那么公式就变成了</font>
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capital5-1.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital5-1.png)
 
 <font style="color:black;">这个过程大家可以理解为资本家在这一交换过程中并不寻求直接的消费价值，而是通过商品的交换，为后续的增值过程来去做一个准备，大家还可以发现一个很不舒服的点，就是人被当做了一个商品进行买卖，这正是马克思所强调的</font>_**<font style="color:#ECAA04;">劳动力商品化</font>**_<font style="color:black;">。</font>
 
@@ -59,7 +59,7 @@ $ W=A(劳动力)+PM(生产资料) $
 
 <font style="color:black;">这种形式的资本，马克思称之为 P，因此</font>
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capital5-2.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital5-2.png)
 
 <font style="color:black;">G 和 P 是同一个资本价值，只是处在不同的存在方式上。</font>
 
@@ -124,7 +124,7 @@ _**<font style="color:#ECAA04;">即第一阶段货币资本转化为生产资本
 
 <font style="color:black;">这就像是一台机器要动起来，你得先把齿轮放在对应的位置上才能运行和循环。所以它的公式也就是第一阶段的公式到 P，即</font>
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capital5-3.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital5-3.png)
 
 <font style="color:black;">这里的虚线，表示资本流通被中断，而资本的循环过程则在继续循环，大家很好理解，这个中断，大家可能会疑惑。</font>
 
@@ -183,15 +183,15 @@ $ W'-G'=(W+w)-(G+g) $
 
 <font style="color:black;">好了，我们回到正题，现在大家已经明白了，三个阶段的分解，我们将它们组合起来，那么公式就是</font>
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capital5-4.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital5-4.png)
 
 <font style="color:black;">你会发现这个资本的循环过程是由一系列相互联系且互为条件的转化而组成的。这些转化通过形态变化，形成了整个过程的各个阶段。在这些阶段中，有两个属于流通领域：</font>
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capital5-5.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital5-5.png)
 
 <font style="color:black;">一个属于生产领域</font>
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capital5-6.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital5-6.png)
 
 <font style="color:black;">在每个阶段中资本的形态和职能都在不断的变化，最终在过程的终结阶段资本回到最初的形式，完成了一个完整的循环。</font>
 

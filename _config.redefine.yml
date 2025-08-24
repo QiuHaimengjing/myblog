@@ -16,18 +16,18 @@ info:
   # Author name
   author: Haijun Qiu
   # Site URL
-  url: https://blog.invictusqiu.top
+  url: https://blog.qiuhaijun.com
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 # IMAGE CONFIGURATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/config/kianalogo.png
+  favicon: https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/Config/KianaLogo.png
   # Site logo
-  logo: https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/config/kianalogo.png
+  logo: https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/Config/KianaLogo.png
   # Site avatar
-  avatar: https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/config/kiana.jpg
+  avatar: https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/Config/Kiana.jpg
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 # COLORS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
@@ -119,8 +119,8 @@ home_banner:
   style: fixed # static or fixed
   # Home banner image
   image:
-    light: https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/config/KamisatoAyaka.png # light mode
-    dark: https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/config/saber.png # dark mode
+    light: https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/Config/KamisatoAyaka.png # light mode
+    dark: https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/Config/Saber.png # dark mode
   # Home banner title
   title: Haijun Qiu
   # Home banner subtitle
@@ -351,7 +351,7 @@ comment:
   config:
     # Waline comment system. See https://waline.js.org/
     waline:
-      serverUrl: https://waline.invictusqiu.top/ # Waline server URL. e.g. https://example.example.com
+      serverUrl: https://waline.qiuhaijun.com/ # Waline server URL. e.g. https://example.example.com
       lang: zh-CN # Waline language. e.g. zh-CN, en-US. See https://waline.js.org/guide/client/i18n.html
       emoji: [] # Waline emojis, see https://waline.js.org/guide/features/emoji.html
       recaptchaV3Key: # Google reCAPTCHA v3 key. See https://waline.js.org/reference/client/props.html#recaptchav3key

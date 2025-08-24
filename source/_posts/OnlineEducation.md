@@ -4,7 +4,7 @@ date: 2024-05-27 19:04:00
 tags: [Java, Vue]
 categories:
   - [项目]
-thumbnail: "https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/Home.jpg"
+thumbnail: "https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/OnlineEducation/Home.jpg"
 excerpt: "本篇文章用于总结在线教育平台整个项目的开发过程，以及项目的功能和技术栈"
 ---
 
@@ -39,12 +39,12 @@ excerpt: "本篇文章用于总结在线教育平台整个项目的开发过程�
 # 后台管理系统
 
 在线教育平台后台管理系统的前端使用的是 vue-admin-template 模板
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/BackendLogin.jpg)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/OnlineEducation/BackendLogin.jpg)
 
 ## 讲师管理
 
 对讲师进行增删改查操作，后端集成了阿里云 OSS，用于讲师头像的上传。
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/AdminTeachers.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/OnlineEducation/AdminTeachers.png)
 **开发中值得一提的：**  
 vue-router 导航切换 时，如果两个路由都渲染同个组件，组件会重（chong）用,  
 组件的生命周期钩子（created）不会再被调用, 使得组件的一些数据无法根据 path 的改变得到更新  
@@ -81,23 +81,23 @@ watch: { // 监听
 ## 课程分类管理
 
 前端上传课程 Excel 表格，后端通过 EasyExcel 来处理表格并将其持久化存储于数据库中。
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/CourseExcel.png)
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/CourseCategory.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/OnlineEducation/CourseExcel.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/OnlineEducation/CourseCategory.png)
 
 ## 课程管理
 
 可以查看课程详细信息并管理课程，如果是发布课程需要进行三个步骤，分别是“填写课程基本信息”、“创建课程大纲”、“最终发布”，需要按照该执行顺序去操作才能完整发布课程。
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/CourseAdmin.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/OnlineEducation/CourseAdmin.png)
 **值得一提的是课程视频上传的实现**
 
 1. 引入依赖  
    引入依赖存在问题
-   ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/DependencyProblem.png)
+   ![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/OnlineEducation/DependencyProblem.png)
    mvn 需要配置环境变量，这样才能在命令行中使用 mvn 命令
-   ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/MavenPath.png)
+   ![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/OnlineEducation/MavenPath.png)
    上传视频  
    参考官网压缩包里面的 sample 示例代码改造
-   ![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/ExampleCode.png)
+   ![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/OnlineEducation/ExampleCode.png)
 
 ```java
 public static void main(String[] args) {
@@ -333,7 +333,7 @@ handleVodUploadSuccess(response, file, fileList) {
 ## 统计分析
 
 统计分析页面，前端页面使用 Echarts 组件库实现图表展示，用户可以选择指定日期范围生成统计数据，包括范围内的用户登录数和注册数，以及课程播放数等数据。
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/StatisticalAnalysis.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/OnlineEducation/StatisticalAnalysis.png)
 该模块使用了 Feign 远程调用  
 比如调用接口 UcenterClient
 
@@ -422,12 +422,12 @@ Nuxt.js 是一个基于 Vue.js 的轻量级应用框架,可用来创建服务端
 ## 首页
 
 展示轮播图、热门课程等信息，然后对用户展示网站幻灯片、热门课程、名师等内容，为了提高访问速度使用了 Redis 缓存首页数据。
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/HomePage.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/OnlineEducation/HomePage.png)
 
 ## 注册和登录
 
 注册功能需要用户通过填写昵称、手机号，然后接收验证码的方式进行注册。如果使用手机号码注册，系统会通过阿里云短信服务向该用户发送短信验证码，后端保存该验证码来和用户输入的验证码进行比对。如果用户是以扫描微信二维码的方式进行注册，后端接收到该请求后会将页面重定向至二维码页面，扫码之后获得微信官方返回的临时票据，使用票据可以获得该用户微信账号的访问凭证和唯一标识，然后请求微信官方的接口地址得到该用户的账号信息，并将其持久化存储于数据库中，实现微信扫码注册功能。
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/RegisterPage.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/OnlineEducation/RegisterPage.png)
 值得一提的是使用 Redis 解决验证码有效时间问题
 
 ```java
@@ -465,7 +465,7 @@ public Result sendMsm(@PathVariable String phone) {
 ## 课程列表
 
 课程列表，展示上架课程，对不同种类的课程进行了分类，可以按照销量、发布时间、售价来对课程列表进行排序。
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/CourseSchedule.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/OnlineEducation/CourseSchedule.png)
 后端处理条件分页
 
 ```java
@@ -520,11 +520,11 @@ public Map<String, Object> getCourseFrontList(Page<EduCourse> pageCourse, Course
 ## 课程详情
 
 课程详情页，包含课程基本信息、分类、讲师等内容，课程分为免费和付费，如果是付费课程，那么前端的“立即观看”按钮会变为“立即购买”按钮，并且在该页面用户可以发表对该课程的评论。
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/CourseDetail.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/OnlineEducation/CourseDetail.png)
 
 ## 视频播放
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/VodPlayer.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/OnlineEducation/VodPlayer.png)
 
 ### 获取播放地址
 
@@ -810,17 +810,17 @@ head: {
 ## 名师列表
 
 得到所有讲师信息，显示所有名师的头像、名称、简介内容。
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/TeacherList.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/OnlineEducation/TeacherList.png)
 
 ## 讲师详情
 
 在名师列表页可以选择不同讲师的卡片，通过携带讲师 id 请求后端接口来查询该讲师的信息和所授课程，页面中展示了名师的详细信息和所授课程。
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/TeacherDetail.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/OnlineEducation/TeacherDetail.png)
 
 ## 订单模块
 
 课程支付，用户只有登录后才能购买对应课程。购买会生成课程订单和微信支付的二维码，在此支付期间每隔 3 秒会查询支付状态，只有扫码成功后才更新数据库中该订单的支付状态，一旦查询支付状态为“已支付”才能为用户开通课程观看权限。
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/onlineEducation/OrderPay.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/OnlineEducation/OrderPay.png)
 服务实现代码
 
 ```java

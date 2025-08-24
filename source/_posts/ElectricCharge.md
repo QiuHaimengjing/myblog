@@ -3,7 +3,7 @@ title: 中国大学生计算机设计大赛作品——电荷：正正子与负�
 date: 2023-03-18 22:52:54
 tags: [生活]
 categories: [生活]
-thumbnail: "https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/ElectricCharge-zhengfumei/ZhengFuCover.png"
+thumbnail: "https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/ElectricCharge/ZhengFuCover.png"
 excerpt: "2021年第14届中国大学生计算机设计大赛获奖作品《电荷：正正子与负负美》设计思路"
 ---
 
@@ -29,7 +29,7 @@ excerpt: "2021年第14届中国大学生计算机设计大赛获奖作品《电�
 
 因为我高中比较擅长物理，当我快速地回顾了高中物理 3-1 课本的内容时，我脑海中闪现出了正负电荷的具体形象，而且正负电荷之间的关系很奇妙，我应该可以试试......
 
-![正负电荷](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/ElectricCharge-zhengfumei/charges.png "正负电荷")
+![正负电荷](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/ElectricCharge/Charges.png "正负电荷")
 
 也因此我确定下了微课的主题：**正负电荷**
 
@@ -52,7 +52,7 @@ excerpt: "2021年第14届中国大学生计算机设计大赛获奖作品《电�
 ## 角色设计
 
 参考了《pop 子和 pipi 美的日常生活》，哈哈，画风简单粗暴，对于人物的创作我是零基础的，在此也没什么可讲的。
-![正正子和负负美](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/ElectricCharge-zhengfumei/ZhengFu.png "正正子和负负美")
+![正正子和负负美](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/ElectricCharge/ZhengFu.png "正正子和负负美")
 
 ## 素材收集
 
@@ -81,7 +81,7 @@ excerpt: "2021年第14届中国大学生计算机设计大赛获奖作品《电�
 那我们仅仅做好动画是不行的，我们还需要拍摄成视频，进行配乐和配音，以及添加字幕，等一系列后期处理。
 
 PPT 做的动画做成视频很简单，你可以直接以视频的方式导出。
-![PPT导出视频](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/ElectricCharge-zhengfumei/pptMovie1.png "PPT导出视频")
+![PPT导出视频](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/ElectricCharge/PPTMovie.png "PPT导出视频")
 
 或者用录频软件录制一遍 PPT 的动画播放。  
 录频软件：N 卡自带的录屏功能，OBS Studio，Bandicam(付费)等。
@@ -107,7 +107,7 @@ PPT 做的动画做成视频很简单，你可以直接以视频的方式导出�
 > 链接：https://pan.baidu.com/s/1QGm5GTxQxeMLMfO5QWZ8ng?pwd=star
 > 提取码：star
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/ElectricCharge-zhengfumei/yimeifasha.jpg)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/ElectricCharge/YiMeiFaSha.jpg)
 我们下期文章再见。
 
 # 参赛历程
@@ -126,7 +126,7 @@ PPT 做的动画做成视频很简单，你可以直接以视频的方式导出�
 
 &emsp;&emsp;我做了两天，然后就放五一假期，当时我和舍友都回家了，那作品可能真就放弃了。回家后的两天抽空做了做，把开头做好，完成了 30％，后面两天，花了大部分精力去做，尤其是第四天直接做到了凌晨 5 点。我当时就感觉灵感很充足，脑子中一幅幅画面涌现出来，效率特别高，毫无困意，那一天晚上直接就把动画全部做完了。  
 &emsp;&emsp;最后一天我在家弄好视频，回到学校弄好配音，然后就贴着时间点上交了。没想过拿奖，当时就没想要拿奖，可能一切都是徒劳，但是自己想做，想把这个故事写出来，画面呈现出来。  
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/ElectricCharge-zhengfumei/ZhengFuCover.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/ElectricCharge/ZhengFuCover.png)
 
 ## 校级赛
 
@@ -139,9 +139,9 @@ PPT 做的动画做成视频很简单，你可以直接以视频的方式导出�
 ## 省赛
 
 &emsp;&emsp;省赛定在云南工商学院，没错，是线下赛，为期三天。  
-![云南工商学院](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/ElectricCharge-zhengfumei/gongshangxueyuan.jpg "云南工商学院")
+![云南工商学院](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/ElectricCharge/GongShangXueYuan.jpg "云南工商学院")
 &emsp;&emsp;第一天从学校出发，乘坐高铁到达了昆明市杨林大学城，入住了官方指定的酒店，然后去领取选手证和官方 T 恤，顺便抽了签。答辩是分组的，和我同行的两组学长学姐我们分到了不同组，但我们手气出奇一致，在组内把第 1 都包了，所以当天会很快答完辩，然后就可以在杨林耍一天啦。
-![参赛物品](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/ElectricCharge-zhengfumei/xianchang.jpg "参赛物品")
+![参赛物品](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/ElectricCharge/XianChang.jpg "参赛物品")
 &emsp;&emsp;第二天现场答辩，为什么我会强调一定要控制好微课时长，因为他只给 10 分钟的答辩时间，而正正子与负负美长达 9 分 10 秒，因此我必须在 50 秒内把作品介绍完，但可能吗？太难了，但这也没办法，那天答辩勉勉强强，紧张还是紧张，只能说自己的现场能力锻炼的还不够。评委老师问的问题主要是：应用了什么软件和技术，并且会挑出几张画面进行提问，然后给出一些建议。  
 &emsp;&emsp;第三天是领奖日，举行颁奖仪式，现场能看到云南省很厉害的计算机老师，当我看到 C 语言网课的普运伟老师时感觉挺奇妙的，有意义的是可以现场看到那些优秀作品展示，同行学长的数媒动画作品被评为了优秀作品，真的很厉害，我拿到了省级二等奖也算心满意足了。
 
@@ -149,7 +149,7 @@ PPT 做的动画做成视频很简单，你可以直接以视频的方式导出�
 
 &emsp;&emsp;因为疫情原因，很遗憾无法去线下参赛，本来想着能去阜阳师范大学见见世面，长长见识的，后来官方将国赛改为了线上比赛。其实我就只是想感受比赛现场的氛围，享受比赛，无法线下比赛是比较遗憾的，不过现场的话省赛也体验过了嘛，只不过我更期待国赛的现场。  
 &emsp;&emsp;国赛答辩是采用腾讯会议答辩，流程都是一样的，放作品介绍作品，回答评委老师的问题。评委老师是会认真去看你写的设计和教学文档的，让我比较在意的是我教学设计文档内容写崩了，只怪我当时没好好检查文档内容，没有做到完美，小小的遗憾吧。最终国赛获得三等奖，能走到国赛在我当时看来是不敢想的，感觉一切都值了。
-![电荷：正正子与负负美](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/ElectricCharge-zhengfumei/rongyuqiang.jpg "电荷：正正子与负负美")
+![电荷：正正子与负负美](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/ElectricCharge/RongYuQiang.jpg "电荷：正正子与负负美")
 
 # 结尾
 
@@ -157,4 +157,4 @@ PPT 做的动画做成视频很简单，你可以直接以视频的方式导出�
 
 > 今天的自己有没有变得比昨天更好，明天的自己会不会变得比今天更好，就像我今天坐在这里，在镜头前讲下这个故事，它只是一个普普通通的，随处可见的故事，总有一天，每个人会和这个故事告别，走向不同的方向，独属于你自己的下一页，但是那样就好，累了的话就停下脚步，怀念的话就回来看看，这个故事也一直都在，且行且看，尽力而为，不要害怕，不要后悔，就像《崩坏 3》的 slogan“为世界上所有的美好而战”一样，我们每个人都是在哭声中来到这个世界，但是却要笑着走向未来。
 
-![《心灵捕手》台词](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/ElectricCharge-zhengfumei/xinlingbushou.jpg "《心灵捕手》台词")
+![《心灵捕手》台词](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/ElectricCharge/XinLingBuShou.jpg "《心灵捕手》台词")

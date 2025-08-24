@@ -57,7 +57,7 @@ mathjax: true
 
 客观唯心是除了我之外，还有一种独立的客观存在的精神。这就像是老子的道黑格尔的绝对精神，它的优先级是最高的一切的规律，都在它的世界中。当然，细分还有很多，比如康德围绕着物自体与现象界的先验唯心等等，这些以后再去详细的讲。这里只是给大家扩展一下。
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capital7-1.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital7-1.png)
 
 ---
 
@@ -111,7 +111,7 @@ $ W'-G'-W...P...W' $
 
 当我们把这些都结合起来，你会发现我们总听到的产业资本，它其实是一个更大的概念，它必须同时以刚才讲过的三种形态去存在，才能构成产业，并且每种形态都得连续通过循环的三个阶段。在流通环节
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capital7-2.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital7-2.png)
 
 也就是劳动力和生产资料，他们有一个共同点，也就是都在履行商品的职能，等待购买。比如，劳动力是属于工人的，也就是马克思所说的劳动力商品化，生产资料是属于其卖者的，在未被购买时，这两者都保持着一个普通的商品属性。直到资本家购买，并将它们组合起来，进入生产领域后，它们才能转化为生产资本。
 
@@ -129,7 +129,7 @@ $ W'-G'-W...P...W' $
 
 资本为了提取剩余价值，就必须得转化为货币，把这个剩余价值释放出来，也就是 W'-G'，以此来去扩大再生产或者用于自己的消费，所以这个过程的公式展开应该是这样子的。
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capital7-3.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital7-3.png)
 
 明白了这些后，现在我们就可以把三个阶段都串联起来，来去比较一下，有什么不同？
 

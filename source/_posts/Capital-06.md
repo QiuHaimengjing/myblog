@@ -61,7 +61,7 @@ mathjax: true
 
 <font style="color:black;">而不是一个封闭的，短期的，让人们形成矛盾对立，并利用这种矛盾来掘取巨额财富。只服于某一个既得利益群体。好了，现在我们已经明白了，</font>_**<font style="color:#ECAA04;">什么是马克思所描述的简单再生产</font>**_<font style="color:black;">，因此这个阶段的完全展开公式。应该是这样的。</font>
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capital6-1.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital6-1.png)
 
 <font style="color:black;">此时，如果资本家把提取的剩余价值用来进行储蓄或者再次投入到这个循环中。那么，我们便得到了积累和规模扩大的再生产。在扩大再生产的这个过程中，剩余价值转化为生产资本是无法一步完成的。它得有一定的规模积累，因为生产规模的扩大，首先受制于技术条件所要求的最低投资门槛。</font>
 
@@ -82,7 +82,7 @@ _<font style="color:black;">同样再说一句题外话，我是一个哲学博�
 
 <font style="color:black;">好了，我们回到正题，当积累到一定程度后，便会发生变化及。剩余价值必然部分消费化，部分资本化或者极端化。但长期的趋势必定遵循着 g1/g2 的稳定比率，说白话就是资本家把提取的剩余价值的一部分用于自己生活的消费，一部分用于再次投资生产或者极端一点的就是资本家全部消费掉或者全部投资进再生产中。但长期的趋势来看，他们会部分的投入再生产中，那么此时公式就变成了</font>
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capital6-2.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital6-2.png)
 
 <font style="color:black;">它按更大的规模，以更大的价值被再生产出来。并且又作为已经增大的生产资本，开始它的第二次循环，一旦第二次循环开始，P 就又成为了起点。只不过这个 P 和第一个 P 相比，已经是一个更大的生产资本，但是大家注意，它与我们第一期讲过的 G 再到 G' 的这个循环形成可不一样，在 G 到 G' 的这个循环中，G' 是作为终点。直接显现出货币价值的增殖，而 P 到 P' 的这个循环中，价值增殖在生产阶段就已经完成了。</font>
 
@@ -100,6 +100,6 @@ _<font style="color:black;">同样再说一句题外话，我是一个哲学博�
 
 <font style="color:black;">比如，不按预期进行的循环中，它才会被拿出来，以此来维持资本的运作。那么，此刻我们把本期生产资本的循环都结合起来，并把它们展开，那么它的总公式就是。</font>
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capital6-3.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital6-3.png)
 
 _**<font style="color:#ECAA04;">现在我们再回过头来看我们开头关于面包这个商品的种种行为，可能你会有更深的理解或感触，你会发现需求是可以被创造出来的，而创造需求的目的，往往是为了循环的延续和将商品的利益最大化。此时手段倒过来主宰了目的，原本作为中介的工具——货币，现在反而成了最终目的。</font>**_

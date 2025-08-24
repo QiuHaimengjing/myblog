@@ -81,7 +81,7 @@ $ 利润率=\frac{剩余价值(m)}{总资本(c+v)} $
 
 <font style="color:black;">这里我们来举一个例子，就比如有一个鞋厂，其中有一批鞋，它的原材料是 10 万元（c），工人的工资是 5 万元（v），那么，生产出这双鞋的总投资成本就是 15 万，这一批鞋的总售价是 30 万，那么它的剩余价值 m 也就是资本所宣称的利润也就等于</font>`30万-15万=15万`<font style="color:black;">，那么按照利润率的公式来计算的话，这批鞋的利润率也就是</font>
 
-![](<https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capitalimage%20(1).png>)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital12-1.png)
 
 _**<font style="color:#ECAA04;">听起来一切都很正常，对吗？但这跟剩余价值率是两码事儿，为什么？因为利润率它并不等于剩余价值率，而剩余价值率才是衡量工人到底创造了多少剩余价值的指标，也就是</font>**_`m/v`_**<font style="color:#ECAA04;">。</font>**_
 
@@ -113,7 +113,7 @@ _**可能有人会问，那你这个不就是纸上谈兵吗？其实在这一�
 
 <font style="color:black;">而这其中，这个 v 的价值，它不能反映真实的劳动时间，它只是一个总劳动的指数，必要劳动越少，剩余劳动就会越多，那么相应的剩余价值率就会越高。而对于不变资本 c，也就是机器或者厂房，它的价值在于它本身已经具有的价值，而不是新增的，它并不能直接创造新的剩余价值，这便对应了原文中的这个公式</font>
 
-![](<https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capitalimage%20(2).png>)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital12-2.png)
 
 <font style="color:black;">我们可以把这个式子拆解为两个因素，首先是</font>`m'`<font style="color:black;">剩余价值率，它是由工资、工作日等等共同决定的，而</font>`v/C`<font style="color:black;">也就是可变资本的占比，它是由资本的构成来决定的，我们先让</font>`m'`<font style="color:black;">不变，那么可以划分成五种情况，说白话就是大家记住我们现在所有的推导过程都是在在剩余价值率保持不变的这个前提下，不同因素如何单独或者共同的去变化，从而影响利润率</font>`p'`<font style="color:black;">。</font>
 
@@ -125,11 +125,11 @@ $ p'=m'\frac{v}{C}=m'\frac{v}{c+v} $
 
 <font style="color:black;">首先是</font>`m'`<font style="color:black;">不变，可变资本的占比</font>`v/C`<font style="color:black;">变，现在有两个资本</font>`C`<font style="color:black;">和</font>`C1`<font style="color:black;">，它们的可变资本分别为</font>`v`<font style="color:black;">和</font>`v1`<font style="color:black;">，而且</font>`m'`<font style="color:black;">相同，那么此时公式是这样的，接着我们引入比例系数后，就得到了把这两个资本一比，也就是</font>
 
-![](<https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capitalimage%20(3).png>)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital12-3.png)
 
 <font style="color:black;">那么此时大家就可以发现，在剩余价值率</font>`m'`<font style="color:black;">相同的前提下，利润率之比=可变资本在总资本中的比重之比。说白话就是，可变资本在总资本中的占比大小，完全的决定了利润率的高低，后面就是对于这个结论带入绝对数的一个验证过程，就比如</font>
 
-![](<https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capitalimage%20(4).png>)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital12-4.png)
 
 <font style="color:black;">这里我就不再去给大家详细的讲了，但是可能有数学比较好的朋友在看到原文的这一章会有疑惑，说马克思为什么要用绝对数，而不是百分比，用百分比不是更直观吗？就比如把</font>`C`<font style="color:black;">写成 100 没错，这样写确实会很直观，但是这样的百分比变化，同时它还会掩盖</font>`v`<font style="color:black;">是减少了还是</font>`c`<font style="color:black;">增加了或者两者都有区别，这很重要，因为用绝对数是可以直观的看出来的，总资本不变时</font>`v`<font style="color:black;">变动，那么</font>`c`<font style="color:black;">也会跟着相应的反方向变动，或者</font>`c`<font style="color:black;">不变时</font>`v`<font style="color:black;">绝对减少，那么总资本就会减少。</font>
 
@@ -155,7 +155,7 @@ $ p':p_1'=\frac{m'v}{C}:\frac{m'v_1}{C}=v:v_1 $<font style="color:black;">
 
 <font style="color:black;">这三种我们放在一起讲，前两个的相比过程分别为：</font>
 
-![](<https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capitalimage%20(5).png>)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital12-5.png)
 
 <font style="color:black;">而第三个</font>`m'`<font style="color:black;">不变，其他都可变，它是一个比较特殊的情况，因为它可以还原为前两种，就比如资本既要增加人手又要投资更高级的设备或更大的厂房，那么总资本</font>`C`<font style="color:black;">也会随之上升或者下降，只要把</font>`v`<font style="color:black;">和</font>`c`<font style="color:black;">同时变分解成：先动</font>`v`<font style="color:black;">再动</font>`c`<font style="color:black;">。或者先动</font>`c`<font style="color:black;">，再动</font>`v`<font style="color:black;">，那么就又回到了前两种情况。</font>
 

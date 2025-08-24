@@ -89,7 +89,7 @@ mathjax: true
 
 <font style="color:black;">答案是，社会资本是所有单个资本的动态总和，而单个资本只是社会总资本的一个组成部分。在这个基础上，我们还需要引入一个循环公式，即</font>
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capitalimage.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital11-1.png)
 
 <font style="color:black;">大家看这个公式像什么？它其实就是我们第三期讲过的商品资本的循环，但是这次不是个别资本的循环，而是商品资本出发再返回商品资本的过程。</font>
 

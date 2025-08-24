@@ -114,15 +114,15 @@ $ G-G-W-G'-G' $
 ---
 
 这里我们来加深一下。首先，对于工人来说，他的处境是：
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capitalimage.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital15-1.png)
 
 而对于产业资本家来说，他的处境是：
 
-![](<https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capitalimage%20(1).png>)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital15-2.png)
 
 而货币资本家是：
 
-![](<https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capitalimage%20(2).png>)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital15-3.png)
 
 **<font style="color:#ECAA04;">这三者最终会演变为一种支配的关系，即货币资本家支配产业资本家，产业资本家支配工人。最终，形成货币权力支配所有人，整个社会都围绕着钱生钱来去运作。</font>**
 

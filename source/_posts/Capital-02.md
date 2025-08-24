@@ -187,13 +187,13 @@ _**<font style="color:#ECAA04;"></font>**_
 
 <font style="color:black;">现在初始的情况是这样的，有一家服装厂要生产 t 恤，其中他的资本构成如下不变资本，比如机械设备，原材料为两万元，可变资本就是劳动者的工资为 1 万元，而商品的价格是每件 t 恤售价 40 元，劳动的强度为每人每天工作八个小时，其中四个小时用于必要劳动，四个小时用于剩余劳动，每人每天能生产十件 t 恤，50 人总产量为 500 件。</font>
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capital2-1.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital2-1.png)
 
 <font style="color:black;">现在我们开始逐步分析。</font>
 
 <font style="color:black;">这个服装厂的总必要劳动时间 200 个小时，总剩余劳动时间就是 200 个小时，每小时劳动的创造价值是 50 元每小时，它的总剩余价值就是一万元，它的总价值是四万元，它的利润额也就是剩余价值是 1 万元，它的利润率是百分之 33.3。</font>
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capital2-2.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital2-2.png)
 
 <font style="color:black;">在完成了这笔订单后，资本家听到了这样的一种说法，说新型的机器可以使人更有效率，可以做到一个顶俩。</font>
 
@@ -203,11 +203,11 @@ _**<font style="color:#ECAA04;"></font>**_
 
 <font style="color:black;">不变资本变为了因为用于购买新设备，它的使用寿命是五年，五年后当机器的使用寿命结束时，它的全部价值就已经被转移到产品中了，可变资本减少至 6000 元，劳动情况则发生了变化。由于自动化设备提升了劳动生产率，单个劳动者每天可以生产 20 件 t 恤，但每人仍然每天工作八个小时。30 名劳动者的总产量为六百件。</font>
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capital2-3.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital2-3.png)
 
 <font style="color:black;">新的利润分析是这样的。</font>
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capital2-4.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital2-4.png)
 
 _**<font style="color:#ECAA04;">发现了吗？虽然商品数量增加了，员工人数也减少了，所需要支付的工资也减少了，但是利润率并未增加，相反他竟然大幅度的减少了。这便是马克思大名鼎鼎的利润率趋降。即虽然引入了新型机器，不变资本，但是它只是转移其价值，到商品中它并不能直接创造新的价值，资本家无法通过机器本身获取额外利润，只能依赖劳动者的活劳动来实现剩余价值，尽管生产效率提升，资本总额增长更快，但是利润率却下降。</font>**_
 
@@ -217,7 +217,7 @@ _**<font style="color:#ECAA04;">发现了吗？虽然商品数量增加了，员
 
 **<font style="color:black;">所以资本一般会将这一调节规律用于快速的去占领市场，因为它的产量可以比其他产业多出很多，也就是我们俗称的薄利多销，然后再通过扩大销售规模和保持商品售价在高位，从更多商品中获取额外的利润。以此来保持竞争力，最后才开始不断的压榨劳动力，攫取剩余价值。</font>**
 
-![](https://invictusqiu.oss-cn-beijing.aliyuncs.com/blog/capital2-5.png)
+![](https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/CapitalVolume/Capital2-5.png)
 
 ---
 
