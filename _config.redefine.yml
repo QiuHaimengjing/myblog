@@ -119,8 +119,8 @@ home_banner:
   style: fixed # static or fixed
   # Home banner image
   image:
-    light: https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/Config/KamisatoAyaka.png # light mode
-    dark: https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/Config/Saber.png # dark mode
+    light: https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/Config/KamisatoAyaka.jpg # light mode
+    dark: https://qiuhaijun-1317309004.cos.ap-guangzhou.myqcloud.com/Blog/Config/Saber.jpg # dark mode
   # Home banner title
   title: Haijun Qiu
   # Home banner subtitle
